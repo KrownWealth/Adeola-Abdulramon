@@ -1,0 +1,285 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+   
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.8;
+    justify-content: start;
+ text-align: start;
+} 
+
+#title{
+    background: url(./images/hero-bg.jpg);
+     color: #fff;
+     background-color: #333;
+    min-height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 10;
+}
+
+
+.container-fluid{
+    padding: 3% 10% 5%;
+}
+
+
+
+
+/*========================
+Navigation
+==========================*/
+
+.navbar{
+    padding: 0 0 2rem;
+}
+
+.navbar-brand{
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+}
+
+
+.nav-item{
+    padding: 0 18px;
+}
+
+nav-link{
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/*========================
+Tile Section
+==========================*/
+.hero-top{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto Mono';
+
+}
+
+.hero-top .hero-heading{
+    font-size: 4rem;
+}
+
+
+    
+/*========================
+Buttons
+==========================*/
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    }
+
+    
+.download-button,
+.all-btn{
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+  
+    
+/*========================
+About
+==========================*/
+#about,
+#testimonials{
+    margin-top: 4%;
+    background-color: #fff;
+}
+
+.about-img{
+width: 80%;
+margin-left: 100px;
+
+}
+
+.about-img{
+    box-shadow: 15px 15px 1px #1f1f1f;
+  -webkit-box-shadow: 15px 15px 1px #1f1f1f;
+  -moz-box-shadow: 15px 15px 1px #1f1f1f;
+}
+
+.title-heading{
+    font-weight: 700;
+    color: #1f1f1f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#about p,
+#services p,
+#portfolio p,
+#contact {
+    text-align: justify;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.stack-img {
+width: 60%;
+margin-bottom: 20px;
+}
+
+
+
+    
+/*========================
+Services amd Portfolio
+==========================*/
+
+#services,
+#portfolio{
+   
+    background-color: #f2f3f5;
+}
+
+
+#services{
+    margin-top: 4%;
+}
+
+.card-img-top{
+    width: 30%;
+    padding-left: 30px;
+}
+
+.services{
+    margin: 5px;
+    margin-bottom: 20px;
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    color: black;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ 
+}
+
+.services:hover{
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+}
+
+
+
+
+
+    
+/*========================
+Portfolio
+==========================*/
+
+.image-grid-cover {
+    width: 100%;
+    background-size: cover;
+    min-height: 180px;
+    position: relative;
+    margin-bottom: 30px;
+    text-shadow: rgba(0,0,0,.8) 0 1px 0;
+    border-radius: 10px;
+}
+.image-grid-clickbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: rgba(0,0,0,.45);
+}
+.cover-wrapper {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.8) 0 1px 0;
+    z-index: 21;
+    position: relative;
+    top: 80px;
+}
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+.all-btn{
+    padding: 10px;
+    color: #fff;
+}
+
+   
+/*========================
+Portfolio
+==========================*/
+
+#contact{
+    margin-top: 4%;
+    background-color: #333;
+    color:#fff
+
+}
+.contact-heading{
+    color:#fff
+
+}
+
+
+.form-line{
+    border-right: 1px solid #B29999;
+  }
+  
+  
+  .form-group{
+      margin-top: 10px;
+    }
+    label{
+      font-size: 1.3em;
+      line-height: 1em;
+      font-weight: normal;
+    }
+    .form-control{
+      font-size: 1.3em;
+      color: #080808;
+    }
+    textarea.form-control {
+        height: 135px;
+       /* margin-top: px;*/
+    }
+    
+    .submit{
+      font-size: 1.1em;
+      float: right;
+      width: 100px;
+      background-color: transparent;
+      color: #fff;
+    
+    }
+  
+footer{
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
