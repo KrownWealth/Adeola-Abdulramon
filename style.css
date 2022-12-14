@@ -23,8 +23,20 @@ body{
 }
 
 
+/*========================
+Reuseable
+==========================*/
+
 .container-fluid{
     padding: 3% 10% 5%;
+}
+
+
+.title-heading{
+    font-weight: 700;
+    color: #1f1f1f;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
@@ -58,9 +70,6 @@ Navigation
    
 }
 
-.nav-link a{
-   
-}
 
 /*========================
 Tile Section
@@ -126,12 +135,6 @@ margin-left: 100px;
   -moz-box-shadow: 15px 15px 1px #1f1f1f;
 }
 
-.title-heading{
-    font-weight: 700;
-    color: #1f1f1f;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
 
 #about p,
 #services p,
@@ -252,7 +255,6 @@ Portfolio
 .contact-heading{
     color:#fff;
     font-weight: 700;
-   
     padding-top: 15px;
     padding-bottom: 15px;
 
