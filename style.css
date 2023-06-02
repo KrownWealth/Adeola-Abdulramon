@@ -10,9 +10,9 @@ body{
     justify-content: start;
  text-align: start;
 } 
-
+/* 
 #title{
-    background: url(./images/hero-bg.jpg);
+    background: url("");
    
      background-color: #333;
     min-height: 90vh;
@@ -20,8 +20,84 @@ body{
     background-repeat: no-repeat;
     opacity: 1;
     z-index: 10;
+} */
+
+
+#title{
+    position: relative;
+  background-image: url("./images/texture.jpg");
+  height: 120vh;
+  
+  /* Adjust other styles like width, height, etc. */
+
 }
 
+#title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
+    /* Adjust other styles like z-index, etc. */
+  }
+  
+  #title .overlay-text {
+    /* position: relative; */
+    text-align: start;
+    transform: rotate(-20deg);
+    opacity: .1;
+    font-size: 12rem;
+    width: 100%;
+    
+    /* padding-bottom: 5rem; */
+    /* Adjust styles like font-size, color, etc. */
+  }
+  
+  #title .bg-text{
+    position: relative;
+    top: -15rem;
+    text-align: start;
+    transition: ease-in 3secs;
+  }
+
+  #title .hero-text{
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  #title p{
+    font-size: 2rem;
+  }
+  
+  @-webkit-keyframes bg-text {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .bg-text {
+    -webkit-animation: bounceIn 1s ease-out;
+    animation: bounceIn 1s ease-out;
+  }
+  
+  .hero-btn{
+    margin-top: 15px;
+    background-color: blue;
+  }
+  
+  
+  
 
 /*========================
 Reuseable
@@ -79,6 +155,7 @@ Tile Section
     text-align: center;
     font-family: 'Roboto Mono';
     color: #fff;
+    padding-bottom: 3rem;
 
 }
 
@@ -95,7 +172,43 @@ Tile Section
 /*========================
 Buttons
 ==========================*/
+.btn-hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 22px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 9px;
+  background-color: #1b5896;
+  background-image: linear-gradient(177deg, #3a86ff, #2c6aa6);
+  box-shadow: 5px 5px 0 0 rgb(249 220 254 / 30%);
+  -webkit-transition: box-shadow .2s ease-in;
+  transition: box-shadow .2s ease-in;
+  font-family: Inter, sans-serif;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  /* width: 100%; */
+}
 
+.btn-hero:hover{
+  color: #080808;
+}
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -146,8 +259,9 @@ margin-left: 100px;
 }
 
 .stack-img {
-width: 30%;
+font-size: 3rem;
 margin-bottom: 20px;
+color: #1b5896;
 }
 
 
@@ -243,13 +357,15 @@ a, a:focus, a:hover {
 
    
 /*========================
-Portfolio
+Contact
 ==========================*/
+
+
 
 #contact{
     padding-top: 4%;
-    background-color: #333;
-    color:#fff
+    background-color: #fff;
+    color:#000
 
 }
 .contact-heading{
@@ -260,7 +376,25 @@ Portfolio
 
 }
 
+.contact-span{
+  width: 30%;
+}
 
+.my-stack{
+  background-color: #1b5896;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#contact a{
+  color: #000;
+}
+
+#contact a:hover{
+  color: #1b5896;
+}
+/* 
 .form-line{
     border-right: 1px solid #B29999;
   }
@@ -281,7 +415,7 @@ Portfolio
     }
     textarea.form-control {
         height: 135px;
-       /* margin-top: px;*/
+       
     }
     
     .submit{
@@ -291,10 +425,10 @@ Portfolio
       background-color: transparent;
       color: #fff;
     
-    }
+    } */
   
 footer{
-    background-color: #1f1f1f;
+    background-color: #000;
     color: #fff;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -342,5 +476,37 @@ footer{
     padding-bottom: 4rem;
 }
 
+ 
+#title .overlay-text {
+    display: none;
+}
+
+
+#title .bg-text{
+    position: relative;
+    top: 0;
+    text-align: start;
+    transition: ease-in 3secs;
+  }
+
+  #title .hero-text{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+  #title{
+    height: 100vh;
+  }
+
+  #title p{
+    font-size: 2rem;
+    
+  }
+  .hero-btn{
+    background-color: blue;
+    margin-top: 15px;
+    padding: 5px;
+  }
 
    }

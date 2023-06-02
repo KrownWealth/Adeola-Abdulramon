@@ -27,30 +27,30 @@
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">John Phillips.</a>
+        <a class="navbar-brand" href="#">AA.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-lg-end">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="btn-hero" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -60,13 +60,19 @@
     <!--Hero top here-->
     <div class="hero-top">
       <div class="container-fluid hero">
-
-        <h1 class="hero-heading">HELLO, <br> I'M JOHN PHILLIP </h1>
+        <h1 class="overlay-text">DEVELOPER</h1>
+        <div class="bg-text">
+        <p>I'm a</p>
+        <h1 class="hero-text">WordPress <br>& Frontend <br> Developer.</h1>
+          <button class="btn btn-hero">Hire Me</button>
+      </div>
+        
+        <!-- <h1 class="hero-heading">HELLO, <br> I'M JOHN PHILLIP </h1>
         <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cumque excepturi sunt
           ducimus iure
           reiciendis soluta vel,
           nostrum harum unde illum voluptas tenetur molestiae placeat, nobis, ratione nam aut sed?</p>
-        <h3>Lorem ipsum dolor sit amet BACKEND DEVELOPER</h3>
+        <h3>Lorem ipsum dolor sit amet BACKEND DEVELOPER</h3> -->
       </div>
 
     </div>
@@ -79,36 +85,39 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6">
-          <h1 class="title-heading">About John</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque exercitationem
-            dolores pariatur saepe quibusdam delectus debitis
-            doloribus facilis facere cupiditate, sint enim possimus a ducimus officia et soluta quos?</p>
+          <h1 class="title-heading">About Adeola</h1>
+          <p>As a WordPress/Frontend developer, I possess the expertise to
+             create visually appealing and interactive websites, utilizing my 
+             proficiency in HTML, CSS, JavaScript, and WordPress CMS, to craft 
+             seamless user experiences. My dedication to staying updated with 
+             the latest web development trends ensures 
+            that I deliver dynamic and responsive websites that meet clients' requirements.</p>
             <div class="stacks">
             <div class="row">
               <h1 class="title-heading">My Stacks</h1>
               <div class="col-4 col-sm-3 col-md-3">
-                <img class="stack-img" src="./images/React-icon.svg.png" alt="">
+                <i class="fa-brands fa-html5 stack-img"></i>
               </div>
               <div class="col-4 col-sm-3 col-md-3">
-                <img class="stack-img" src="./images/Angular_full_color_logo.svg.png" alt="">
+                <i class="fa-brands fa-css3-alt stack-img"></i>
               </div>
               <div class="col-4 col-sm-3 col-md-3">
-                <img class="stack-img" src="./images/javascript.png" alt="">
+                <i class="fa-brands fa-react stack-img"></i>
               </div>
               <div class="col-4 col-sm-3 col-md-3">
-                <img class="stack-img" src="./images/React-icon.svg.png" alt="">
+                <i class="fa-brands fa-wordpress stack-img"></i>
               </div>
               <div class="col-4 col-sm-3 col-md-3">
-                <img class="stack-img" src="./images/Angular_full_color_logo.svg.png" alt="">
+                <i class="fa-brands fa-bootstrap stack-img"></i>
               </div>
               <div class="col-4 col-sm-3 col-md-3">
-                <img class="stack-img" src="./images/javascript.png" alt="">
+                <i class="fa-brands fa-github stack-img"></i>
               </div>
             </div>
           </div>
          
-          <button type="button" class="btn btn-dark btn-lg download-button">Download CV </button>
-          <button type="button" class="btn btn-dark btn-lg download-button">Download Resume </button>
+          <!-- <button type="button" class="btn btn-dark btn-lg download-button">Download CV </button> -->
+          <a class="btn btn-hero" href="">View Resume </a>
         </div>
       
         <div class="col-lg-6 ">
@@ -126,7 +135,7 @@
   <section id="services">
     <div class="container-fluid">
       <h2 class="title-heading">Services</h2>
-      <p class="title-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque exercitationem
+      <p class="title-text">My services included but not limited to:
       </p>
       <div class="row">
         <div class="col-lg-4">
@@ -134,9 +143,10 @@
           <div class="card services">
             <img src="./images/coding.png" class="card-img-top" alt="Fissure in Sandstone" />
             <div class="card-body">
-              <h5 class="card-title">API Development</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">WordPress Websites Development</h5>
+              <p class="card-text">
+                Whether you need a simple blog, an e-commerce store, a portfolio website, 
+                or a complex corporate site, I got you covered.</p>
 
             </div>
           </div>
@@ -145,9 +155,11 @@
           <div class="card services">
             <img src="./images/coding.png" class="card-img-top" alt="Fissure in Sandstone" />
             <div class="card-body">
-              <h5 class="card-title">API Development</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">FrontEnd Development</h5>
+              <p class="card-text">Experience seamless user interfaces and captivating
+                 web experiences with our professional Frontend Development Service.
+                <br>
+              <br></p>
 
             </div>
           </div>
@@ -156,9 +168,9 @@
           <div class="card services">
             <img src="./images/coding.png" class="card-img-top" alt="Fissure in Sandstone" />
             <div class="card-body">
-              <h5 class="card-title">Web Development</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Web Design</h5>
+              <p class="card-text">Transform your vision into a stunning reality with my expert WordPress 
+                Web Design services that combine creativity, functionality, and user-centric design.</p>
 
             </div>
           </div>
@@ -167,9 +179,11 @@
           <div class="card services">
             <img src="./images/coding.png" class="card-img-top" alt="Fissure in Sandstone" />
             <div class="card-body">
-              <h5 class="card-title">Responsive Design</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">WordPress Website Maintainance</h5>
+              <p class="card-text">Ensure the smooth operation and security of
+                 your website with
+                 my skilled WordPress Maintenance service, 
+                providing regular updates, security etc.</p>
 
             </div>
           </div>
@@ -178,9 +192,8 @@
           <div class="card services">
             <img src="./images/coding.png" class="card-img-top" alt="Fissure in Sandstone" />
             <div class="card-body">
-              <h5 class="card-title">Security</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Codebase Refactoring</h5>
+              <p class="card-text">Optimize and streamline your frontend codebase, enhancing performance, maintainability, and scalability of your web application.</p>
 
             </div>
           </div>
@@ -190,10 +203,10 @@
             <img src="./images/coding.png" class="card-img-top" alt="Fissure in Sandstone" />
             <!--note there will be a shadow around this img-->
             <div class="card-body">
-              <h5 class="card-title">Performance</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-
+              <h5 class="card-title">SEO</h5>
+              <p class="card-text">Boost your online visibility and drive
+                 organic traffic to your WordPress website with my specialized WordPress SEO service, 
+                </p>
 
             </div>
           </div>
@@ -207,52 +220,57 @@
   <section id="portfolio">
     <div class="container-fluid">
       <h2 class="title-heading">Portfolio</h2>
-      <p class="title-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque exercitationem
-      </p>
-      <button class="all-btn">View All</button>
+      <div class="d-flex flex-row mb-5 justify-content-start">
+        <div class="my-stack p-4 ">WordPress</div>
+        <div class="my-stack p-4">FrontEnd</div>
+        <div class="my-stack p-4">Web Apps</div>
+      </div>
+      <!-- <p class="title-text">Custom Wordpress websites development
+      </p> -->
+      <!-- <button class="all-btn">View All</button> -->
       <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+          <div class="image-grid-cover" style="background-image: url(./images/travel-leader.png);">
+            <a href="https://www.travelleaders.com/" class="image-grid-clickbox"></a>
+            <a href="#" class="cover-wrapper">Travel Agency Website</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+          <div class="image-grid-cover" style="background-image: url(./images/Home-Ascent-Foods.png);">
+            <a href="https://ascentfoods.com/" class="image-grid-clickbox"></a>
+            <a href="#" class="cover-wrapper">Food Supply Website</a> 
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+          <div class="image-grid-cover" style="background-image: url(./images/ThePlace.png);">
+            <a href="https://theplace.com.ng/" class="image-grid-clickbox"></a>
+            <a href="#" class="cover-wrapper">Restaurant WordPress Website</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+          <div class="image-grid-cover" style="background-image: url(./images/BlossomEcomm.png);">
+            <a href="#" class="image-grid-clickbox"></a>
+            <a href="#" class="cover-wrapper">Email Marketing Websites</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+          <div class="image-grid-cover" style="background-image: url(./images/Cyber-Web.png);">
+            <a href="https://blossomecom.com/" class="image-grid-clickbox"></a>
+            <a href="#" class="cover-wrapper">Frontend Development</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+          <div class="image-grid-cover" style="background-image: url(./images/Blog-Rennie-Curran.png);">
+            <a href="https://renniecurran.com/news-grid/" class="image-grid-clickbox"></a>
+            <a href="#" class="cover-wrapper">WordPress Blog Design</a>
+          </div>
+        </div>
         <div class="col-12 col-sm-6 col-md-4 image-grid-item">
           <div class="image-grid-cover" style="background-image: url(./images/website1.jpg);">
             <a href="#" class="image-grid-clickbox"></a>
-            <a href="#" class="cover-wrapper">Web Development</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
-          <div class="image-grid-cover" style="background-image: url(./images/website2.jpg);">
-            <a href="#" class="image-grid-clickbox"></a>
-            <a href="#" class="cover-wrapper">Codebase Programming</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
-          <div class="image-grid-cover" style="background-image: url(./images/website3.jpg);">
-            <a href="#" class="image-grid-clickbox"></a>
             <a href="#" class="cover-wrapper">Responsive Design</a>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
-          <div class="image-grid-cover" style="background-image: url(./images/website4.jpg);">
-            <a href="#" class="image-grid-clickbox"></a>
-            <a href="#" class="cover-wrapper">API Development</a>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
-          <div class="image-grid-cover" style="background-image: url(./images/website5.png);">
-            <a href="#" class="image-grid-clickbox"></a>
-            <a href="#" class="cover-wrapper">Blog Design</a>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
-          <div class="image-grid-cover" style="background-image: url(./images/website6.jpg);">
-            <a href="#" class="image-grid-clickbox"></a>
-            <a href="#" class="cover-wrapper">Responsive Design</a>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 image-grid-item">
-          <div class="image-grid-cover" style="background-image: url(./images/website7.jpg);">
-            <a href="#" class="image-grid-clickbox"></a>
-            <a href="#" class="cover-wrapper">Database Management</a>
           </div>
         </div>
 
@@ -266,48 +284,56 @@
   <!--Contact section-->
 
   <section id="contact">
-    <div class="container-fluid section-content">
-      <h2 class="contact-heading">Contact</h2>
-      <p class="title-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque exercitationem
-      </p>
+    <div class="container-fluid">
+        
+                <h2>Contact Me </h2>
 
-      <div class="row">
-        <form>
-          <div class="col-lg-6 form-line">
-            <div class="form-group">
-              <label for="exampleInputUsername">Your name</label>
-              <input type="text" class="form-control" id="" placeholder=" Enter Name">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail">Email Address</label>
-              <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
-            </div>
-            <div class="form-group">
-              <label for="telephone">Mobile No.</label>
-              <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="form-group">
-              <label for="description"> Message</label>
-              <textarea class="form-control" id="description" placeholder="Enter Your Message"></textarea>
-            </div>
-            <div>
+        
+                <div class="contact-content">
+                    <p>I am available for hire and open to any ideas of cooperation.</p>
+                    <div class="d-flex flex-column flex-lg-row justify-content-start">
+                      <div class="contact-span">Email </div>
+                      <div class=""><a href="mailto:techgirl4webservices@gmail.com">
+                        <i class="fa fa-envelope"></i> <span>techgirl4webservices@gmail.com</span></a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row mt-2">
+                      <div class="contact-span">linkedin </div>
+                      <div class="">
+                        <a href="https://www.linkedin.com/in/adeolaabdulramon/"> 
+                          <i class="fa fa-linkedin"></i> <span> Adeola Abdulramon</span></a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row mt-2">
+                      <div class="contact-span">GitHub </div>
+                      <div class="">
+                        <a href="https://github.com/KrownWealth"><i class="fa fa-github"></i>
+                          <span> Adeola Abdulramon</span></a></li>
+                    
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row mt-2">
+                      <div class="contact-span">Twitter </div>
+                      <div class="">
+                        <a href="https://twitter.com/AdeolaAbdul01"><i class="fa fa-twitter"></i>
+                          <span> Adeola Abdulramon</span></a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row mt-2">
+                      <div class="contact-span">Facebook  </div>
+                      <div class="">
+                        <a href="https://web.facebook.com/Adetosuccess"><i class="fa fa-facebook"></i>
+                          <span> Adeola Abdulramon</span></a>
+                        </div>
+                    </div>
+           
+                </div><!--contact info row ends-->  
+                
+    </div> 
+</div> 
+</section>
+<!---===contact section closed===-->
 
-              <button type="button" class="btn btn-light btn-lg download-button">
-                Send Message</button>
-            </div>
-
-          </div>
-        </form>
-
-
-      </div>
-    </div>
-    
-  </section>
-
-  <!--contact close-->
 
   <!--Footer Section-->
 
@@ -330,8 +356,8 @@
 
     <!-- Copyright -->
     <div class="text-center p-3"> All Right Reserved.
-      © 2022 John Phillip Design By :
-      <a class="text-white" href="https://www.linkedin.com/in/adeolaabdulramon/">Adeola Abdulramon </a>
+      © 2023 Adeola Abdulramon Design By :
+      <a class="text-white" href="https://www.linkedin.com/in/adeolaabdulramon/">TechGirl</a>
     </div>
     <!-- Back to top button -->
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
