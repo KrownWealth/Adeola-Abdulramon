@@ -105,7 +105,7 @@ Reuseable
 
 
 
-/*========================
+/=======================
 Navigation
 ==========================*/
 
@@ -429,7 +429,7 @@ footer{
 
 @media only screen and (max-width: 375px){
       #title .overlay-text {font-size:10rem;
-       t 
+       
        
 }
     
@@ -488,13 +488,37 @@ footer{
     display: none;
 }
 
+#title .overlay-text {
+    /* position: relative; */
+    text-align: start;
+    transform: rotate(-30deg);
+    opacity: .
+    font-size:10rem;
+     opacity:.25;
 
-#title .bg-text{
+    
+
+  }
+  
+  #title .bg-text{
     position: relative;
-    top: -1
+    top: -15rem;
     text-align: start;
     transition: ease-in 3secs;
   }
+
+   .hero-text{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  #title p{
+    font-size: 2rem;
+  }
+
+    
+  
 
   #title .hero-text{
     font-size: 2rem;
@@ -506,10 +530,10 @@ footer{
     height: 100vh;
   }
 
-  #title p{
-    font-size: 2rem;
+  
     
-  }
+  
+
   .hero-btn{
     background-color: blue;
     margin-top: 15px;
