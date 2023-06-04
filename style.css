@@ -71,7 +71,10 @@ body{
     font-size: 4rem;
     font-weight: 900;
     text-transform: uppercase;
-  }
+   
+   line-height:1.5; 
+   
+}
 
   #title p{
     font-size: 2rem;
