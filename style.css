@@ -505,7 +505,7 @@ footer{
   
   #title .bg-text{
     position: relative;
-    top: -15rem;
+    top: 15rem;
     text-align: start;
     transition: ease-in 3secs;
   }
