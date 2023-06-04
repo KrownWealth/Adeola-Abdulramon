@@ -42,7 +42,9 @@ body{
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
     /* Adjust other styles like z-index, etc. */
   }
-  
+
+
+
   #title .overlay-text {
     /* position: relative; */
     text-align: start;
@@ -441,7 +443,18 @@ footer{
 
 
 @media only screen and (max-width: 375px){
+ #title::before{
 
+  display:none; 
+
+}
+
+#title .hero-text{
+
+   font-size:2rem;
+
+ }  
+   
     .navbar-brand {
        
         font-size: 1.5rem;
