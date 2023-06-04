@@ -39,7 +39,7 @@ body{
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;P
 
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
@@ -54,6 +54,7 @@ body{
     transform: rotate(-20deg);
     opacity: .1;
     font-size: 12rem;
+     opacity:.25;
 
     
 
@@ -427,8 +428,11 @@ footer{
 
 
 @media only screen and (max-width: 375px){
-    font-size: 4rem;
-    font-size: 4rem;
+      #title .overlay-text {font-size:10rem;
+       t 
+       
+}
+    
  #title::before{
 
   display:none; 
