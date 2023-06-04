@@ -49,11 +49,11 @@ body{
 
 
   #title .overlay-text {
-    /* position: relative; */
+    position: relative; 
     text-align: start;
     transform: rotate(-20deg);
     
-    font-size: 12rem;
+   font-size: 12rem;
      opacity:.25;
 
     
@@ -61,8 +61,10 @@ body{
   }
   
   #title .bg-text{
-    position:absolute;
-  top: -15rem;
+    position:absolute
+
+    position:relative;
+     top: -15rem;
     text-align start;
     transition: ease-in 3secs;
   }
