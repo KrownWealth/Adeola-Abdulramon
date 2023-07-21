@@ -94,7 +94,11 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
-
+/* 
+button.load-more{
+  justify-content: center;
+  background: #fff;
+} */
 
 /*Links*/
 
