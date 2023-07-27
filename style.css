@@ -294,6 +294,10 @@ body.light .btn-cta:focus {
   box-shadow: #07070733 0 0 0 var(--gutter-nano);
 }
 
+#load-more-btn:hover {
+  background-color: var(--bs-btn-hover-bg)!important;
+}
+
 .btn-secondary {
   border: 1px solid var(--border-dark);
   color: var(--important);
@@ -734,7 +738,7 @@ body.dark .work-links img {
   }
 
   to {
-    transform: none;
+    transform: translateY(0px);
     opacity: 1;
   }
 }

@@ -1,3 +1,18 @@
+// Animating work instances on scroll
+let observer = new IntersectionObserver(
+  (entries) => {
+    const [entry] = entries;
+    const [textbox, picture] = Array.from(entry.target.children);
+    if (entry.isIntersecting) {
+      picture.classList.remove("transform");
+      Array.from(textbox.children).forEach(
+        (el) => (el.style.animationPlayState = "running")
+      );
+    }
+  },
+  { threshold: 0.3 }
+);
+
 let workData = [
 
   {
@@ -85,7 +100,6 @@ const loadMoreBtn = document.getElementById('load-more-btn');
 
 
 let generateWork = () => {
-  workContainer.innerHTML = workData
   const contentToDisplay = workData
     .slice(0, currentItemsToShow)
     .map((x) => {
@@ -102,31 +116,35 @@ let generateWork = () => {
         `<li>${skill}</li>`
       ).join('');
 
-
       return `
-      <div class="work-box">
-        <div class="work-textbox">
-          <h3 class="h3">${workTitle}</h3>
-          <p class="work-text">${workText}</p>
-          <ol class="work-technologies">
-          ${skillsList}
-        </ol>
-        <div class="work-links">
-            <a href=${source} target="_blank" rel="noopener" class="link">${btn}</a>
-            <a href=${source} target="_blank" rel="noopener" title="Source code">
-            <img src=${img} alt="GitHub" loading="lazy" />
-            </a>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">${workTitle}</h3>
+            <p class="work-text">${workText}</p>
+            <ol class="work-technologies">
+            ${skillsList}
+          </ol>
+          <div class="work-links">
+              <a href=${source} target="_blank" rel="noopener" class="link">${btn}</a>
+              <a href=${source} target="_blank" rel="noopener" title="Source code">
+              <img src=${img} alt="GitHub" loading="lazy" />
+              </a>
+            </div>
           </div>
+          <picture class="work-img">
+            <img loading="lazy" src=${img} alt="Clothccessories"/>
+          </picture>
         </div>
-        <picture class="work-img">
-          <img loading="lazy" src=${img} alt="Clothccessories"/>
-        </picture>
-      </div>
       `;
     })
     .join("");
 
   workContainer.innerHTML = contentToDisplay;
+
+  const workEls = document.querySelectorAll(".work-box");
+  workEls.forEach((workEl) => {
+    observer.observe(workEl);
+  });
 
   if (currentItemsToShow >= workData.length) {
     loadMoreBtn.style.display = "none";
@@ -134,13 +152,13 @@ let generateWork = () => {
     loadMoreBtn.style.display = "block";
   }
 };
+generateWork();
 
+const workImgs = document.querySelectorAll(".work-img");
+workImgs.forEach((workImg) => workImg.classList.add("transform"));
 
 loadMoreBtn.addEventListener("click", function () {
   currentItemsToShow += 1;
 
   generateWork();
 });
-
-
-generateWork();

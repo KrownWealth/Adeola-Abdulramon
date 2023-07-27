@@ -1,32 +1,8 @@
 
 const navMenu = document.querySelector(".nav-items");
 const btnToggleNav = document.querySelector(".menu-btn");
-const workEls = document.querySelectorAll(".work-box");
-const workImgs = document.querySelectorAll(".work-img");
 const mainEl = document.querySelector("main");
 
-
-// Animating work instances on scroll
-
-workImgs.forEach((workImg) => workImg.classList.add("transform"));
-
-let observer = new IntersectionObserver(
-  (entries) => {
-    const [entry] = entries;
-    const [textbox, picture] = Array.from(entry.target.children);
-    if (entry.isIntersecting) {
-      picture.classList.remove("transform");
-      Array.from(textbox.children).forEach(
-        (el) => (el.style.animationPlayState = "running")
-      );
-    }
-  },
-  { threshold: 0.3 }
-);
-
-workEls.forEach((workEl) => {
-  observer.observe(workEl);
-});
 
 // Shiny hover effect on cards that follows mouse
 
