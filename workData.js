@@ -99,7 +99,7 @@ let generateWork = () => {
         skills
       } = x;
       const skillsList = skills.map((skill) =>
-        `<li>${skill.skill}</li>`
+        `<li>${skill}</li>`
       ).join('');
 
 
