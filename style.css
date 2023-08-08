@@ -427,11 +427,13 @@ main {
 /* --------------------------------- */
 
 .menu-btn-container {
+  background: var(--bg-color-primary);
   position: fixed;
   width: 100%;
-  top: var(--gutter-x-small);
+  /* top: var(--gutter-x-small); */
   left: 0;
   z-index: 4;
+
 }
 
 .menu-btn {
@@ -1196,6 +1198,8 @@ body.dark .footer-link img {
   align-items: center;
   gap: 2ch;
   user-select: none;
+  margin-top:20px;
+  margin-left: 30px;
   -webkit-tap-highlight-color: transparent;
 }
 
