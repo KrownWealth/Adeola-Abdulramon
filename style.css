@@ -266,6 +266,13 @@ h3,
   cursor: pointer;
 }
 
+#load-more-btn:hover{
+  color: #000;
+}
+.navbar-toggler {
+  background-color: #fff;
+  color: #000;
+}
 @media (max-width: 700px) {
   .btn {
     padding: 16px 48px;

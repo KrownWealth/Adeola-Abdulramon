@@ -33,6 +33,19 @@ let workData = [
   },
   {
     id: 2,
+    workTitle: "Quote Generator",
+    workText: "Automatic generate new quote when new quote button is triggered. Created with:",
+    source: "https://krownwealth.github.io/quote_gen/",
+    img: "./assets/images/Quote-Generator.png",
+    btn: "Explore this project",
+    skills: [{
+        skill1: "JavaScript"
+      }
+
+    ]
+  },
+  {
+    id: 3,
     workTitle: "Ascentfoods.com",
     workText: "Converted Figma design to a pixel-perfect wordpress website. Designed with:",
     source: "https://ascentfoods.com/",
@@ -45,7 +58,7 @@ let workData = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     workTitle: "Rennie's blog",
     workText: "Redesign Rennie's blog to a professional wordpress blog design. Redesigned using:",
     source: "https://renniecurran.com/news-grid/",
@@ -59,7 +72,7 @@ let workData = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     workTitle: "PetMe",
     workText: "Contributed to an open-source PetMe project. Improved the each-pet profile card design.",
     source: "https://akshitagupta15june.github.io/PetMe/",
@@ -75,7 +88,7 @@ let workData = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     workTitle: "ThePlace.com.ng",
     workText: "Developed an online restaurant food ordering system.",
     source: "https://theplace.com.ng/",
@@ -90,12 +103,13 @@ let workData = [
 ]
 
 
-const itemsToShowInitially = 3;
-let currentItemsToShow = itemsToShowInitially;
+const currentItems = 3;
+let currentItemsToShow = currentItems;
 
 const workContainer = document.getElementById('workContainer');
-const loadMoreBtn = document.getElementById('load-more-btn');
-
+const loadMoreBtn = document.querySelector('.btn.btn-lg')
+// const loadMoreBtn = document.getElementById('load-more-btn');
+let contentToDisplay =[];
 
 let generateWork = () => {
   workContainer.innerHTML = workData
@@ -145,20 +159,33 @@ let generateWork = () => {
   workContainer.innerHTML = contentToDisplay;
 
 
+//   workContainer.innerHTML = contentToDisplay;
+//   if (currentItemsToShow >= workData.length) {
+//     loadMoreBtn.style.display = "block";
+//   } else {
+//     loadMoreBtn.style.display = "block";
+//   }
+// };
+
+
+loadMoreBtn.addEventListener("click", function (el) {
   workContainer.innerHTML = contentToDisplay;
-  if (currentItemsToShow >= workData.length) {
-    loadMoreBtn.style.display = "none";
-  } else {
-    loadMoreBtn.style.display = "block";
+  for(let i = currentItems; i < currentItems+1; i++){
+    setTimeout(function(){
+      
+      if(currentItems >= workData.length){
+        loadMoreBtn.style.display = 'none';
+        //contentToDisplay[i].style.display = 'block'
+      }else{
+        loadMoreBtn.style.display = 'block';
+      }
+      
+    }, 3000)
   }
-};
-
-
-loadMoreBtn.addEventListener("click", function () {
   currentItemsToShow += 1;
 
-  generateWork();
+ generateWork();
 });
-
+}
 
 generateWork();
