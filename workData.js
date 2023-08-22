@@ -13,6 +13,7 @@ let observer = new IntersectionObserver(
   { threshold: 0.3 }
 );
 
+
 let workData = [
 
   {
@@ -104,17 +105,15 @@ let workData = [
   },
 ]
 
-
 const currentItems = 3;
 let currentItemsToShow = currentItems;
 
 const workContainer = document.getElementById('workContainer');
-const loadMoreBtn = document.querySelector('.btn.btn-lg')
-// const loadMoreBtn = document.getElementById('load-more-btn');
-let contentToDisplay =[];
+const loadMoreBtn = document.querySelector('.btn.btn-lg');
+let contentToDisplay = '';
 
 let generateWork = () => {
-  const contentToDisplay = workData
+  contentToDisplay = workData
     .slice(0, currentItemsToShow)
     .map((x) => {
       let {
@@ -136,12 +135,12 @@ let generateWork = () => {
             <h3 class="h3">${workTitle}</h3>
             <p class="work-text">${workText}</p>
             <ol class="work-technologies">
-            ${skillsList}
-          </ol>
-          <div class="work-links">
+              ${skillsList}
+            </ol>
+            <div class="work-links">
               <a href=${source} target="_blank" rel="noopener" class="link">${btn}</a>
               <a href=${source} target="_blank" rel="noopener" title="Source code">
-              <img src=${img} alt="GitHub" loading="lazy" />
+                <img src=${img} alt="GitHub" loading="lazy" />
               </a>
             </div>
           </div>
@@ -151,7 +150,7 @@ let generateWork = () => {
         </div>
       `;
     })
-    .join("");
+    .join('');
 
   workContainer.innerHTML = contentToDisplay;
 
@@ -159,38 +158,17 @@ let generateWork = () => {
   workEls.forEach((workEl) => {
     observer.observe(workEl);
   });
-
-//   workContainer.innerHTML = contentToDisplay;
-//   if (currentItemsToShow >= workData.length) {
-//     loadMoreBtn.style.display = "block";
-//   } else {
-//     loadMoreBtn.style.display = "block";
-//   }
-// };
-
-
-loadMoreBtn.addEventListener("click", function (el) {
-  workContainer.innerHTML = contentToDisplay;
-  for(let i = currentItems; i < currentItems+1; i++){
-    setTimeout(function(){
-      
-      if(currentItems >= workData.length){
-        loadMoreBtn.style.display = 'none';
-        //contentToDisplay[i].style.display = 'block'
-      }else{
-        loadMoreBtn.style.display = 'block';
-      }
-      
-    }, 3000)
-  }
 };
-
 
 loadMoreBtn.addEventListener("click", function () {
   currentItemsToShow += 1;
+  generateWork();
 
- generateWork();
+  if (currentItemsToShow >= workData.length) {
+    loadMoreBtn.style.display = "none";
+  } else {
+    loadMoreBtn.style.display = "block";
+  }
 });
-
 
 generateWork();
